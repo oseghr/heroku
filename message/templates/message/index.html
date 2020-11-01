@@ -1,0 +1,16 @@
+{% extends 'message/base.html' %}
+
+
+{% block content %}
+
+<h1>Message Page</h1>
+
+
+
+<ul>
+    {% for item in posts %}
+    <li>{{ item.title }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
